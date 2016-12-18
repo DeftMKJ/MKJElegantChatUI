@@ -59,15 +59,15 @@ static NSString * identifyPushID = @"PushChatCell";
         {
             if (i == 0)
             {
-                model.isOpen = [[NSUserDefaults standardUserDefaults] valueForKey:@"kLongMessages"];
+                model.isOpen = [[[NSUserDefaults standardUserDefaults] valueForKey:@"kLongMessages"] boolValue];
             }
             else if (i ==1)
             {
-                model.isOpen = [[NSUserDefaults standardUserDefaults] valueForKey:@"kRightMediaButton"];
+                model.isOpen = [[[NSUserDefaults standardUserDefaults] valueForKey:@"kRightMediaButton"] boolValue];
             }
             else
             {
-                model.isOpen = [[NSUserDefaults standardUserDefaults] valueForKey:@"kDynamic"];
+                model.isOpen = [[[NSUserDefaults standardUserDefaults] valueForKey:@"kDynamic"] boolValue];
             }
             
         }
@@ -139,6 +139,7 @@ static NSString * identifyPushID = @"PushChatCell";
             case 0:
                 model.isOpen = !model.isOpen;
                 [[NSUserDefaults standardUserDefaults] setBool:model.isOpen forKey:@"kLongMessages"];
+                [[NSUserDefaults standardUserDefaults] synchronize];
                 break;
             case 1:
                 model.isOpen = !model.isOpen;

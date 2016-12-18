@@ -14,6 +14,11 @@
 
 @implementation MKJChatViewcontroller
 
+- (void)dealloc
+{
+    NSLog(@"dealloc--->%s",object_getClassName(self));
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -85,7 +90,7 @@
      *  Note: this feature is mostly stable, but still experimental
      */
     // 一个bubbles的移动动画效果
-    self.collectionView.collectionViewLayout.springinessEnabled = [[NSUserDefaults standardUserDefaults] valueForKey:@"kDynamic"];
+    self.collectionView.collectionViewLayout.springinessEnabled = [[[NSUserDefaults standardUserDefaults] valueForKey:@"kDynamic"] boolValue];
 }
 
 #pragma mark - Custom menu actions for cells
