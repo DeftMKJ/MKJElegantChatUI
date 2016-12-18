@@ -1,0 +1,23 @@
+PODS:
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Masonry (1.0.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - Masonry
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+PODFILE CHECKSUM: 8c2bf8683ddcf465821da830afeb21ad6ccb8a84
+
+COCOAPODS: 1.2.0.beta.1

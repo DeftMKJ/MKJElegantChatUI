@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32A76BF7EEAFD2BE78875E21 /* libPods-JSQChatUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191501F791B5C780249B419 /* libPods-JSQChatUI.a */; };
+		B1647ABD1E04F7BC003EAAF1 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1647ABB1E04F7BC003EAAF1 /* SettingTableViewCell.m */; };
+		B1647ABE1E04F7BC003EAAF1 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1647ABC1E04F7BC003EAAF1 /* SettingTableViewCell.xib */; };
+		B1647AC11E051CB4003EAAF1 /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1647AC01E051CB4003EAAF1 /* SettingModel.m */; };
+		B1647AC51E051F23003EAAF1 /* MKJChatViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B1647AC41E051F23003EAAF1 /* MKJChatViewcontroller.m */; };
+		B1647AC81E05210C003EAAF1 /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = B1647AC71E05210C003EAAF1 /* DemoModelData.m */; };
+		B1647ACC1E052F81003EAAF1 /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1647ACB1E052F81003EAAF1 /* intro.mp4 */; };
+		B1647ACE1E053086003EAAF1 /* jsq_messages_sample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1647ACD1E053086003EAAF1 /* jsq_messages_sample.m4a */; };
+		B1DB914D1E03E8770080FF1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DB914C1E03E8770080FF1E /* main.m */; };
+		B1DB91501E03E8770080FF1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DB914F1E03E8770080FF1E /* AppDelegate.m */; };
+		B1DB91531E03E8770080FF1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DB91521E03E8770080FF1E /* ViewController.m */; };
+		B1DB91561E03E8770080FF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DB91541E03E8770080FF1E /* Main.storyboard */; };
+		B1DB91581E03E8770080FF1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DB91571E03E8770080FF1E /* Assets.xcassets */; };
+		B1DB915B1E03E8770080FF1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DB91591E03E8770080FF1E /* LaunchScreen.storyboard */; };
+		B1DB91661E03E8770080FF1E /* JSQChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DB91651E03E8770080FF1E /* JSQChatUITests.m */; };
+		B1DB91711E03E8770080FF1E /* JSQChatUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DB91701E03E8770080FF1E /* JSQChatUIUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1DB91621E03E8770080FF1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1DB91401E03E8770080FF1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1DB91471E03E8770080FF1E;
+			remoteInfo = JSQChatUI;
+		};
+		B1DB916D1E03E8770080FF1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1DB91401E03E8770080FF1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1DB91471E03E8770080FF1E;
+			remoteInfo = JSQChatUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5003B460055B2801492595D4 /* Pods-JSQChatUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSQChatUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSQChatUI/Pods-JSQChatUI.debug.xcconfig"; sourceTree = "<group>"; };
+		8191501F791B5C780249B419 /* libPods-JSQChatUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSQChatUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16B9EC7EC9B67E3BE3A21E4 /* Pods-JSQChatUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSQChatUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSQChatUI/Pods-JSQChatUI.release.xcconfig"; sourceTree = "<group>"; };
+		B1647ABA1E04F7BC003EAAF1 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		B1647ABB1E04F7BC003EAAF1 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		B1647ABC1E04F7BC003EAAF1 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		B1647ABF1E051CB4003EAAF1 /* SettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingModel.h; sourceTree = "<group>"; };
+		B1647AC01E051CB4003EAAF1 /* SettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
+		B1647AC31E051F23003EAAF1 /* MKJChatViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJChatViewcontroller.h; sourceTree = "<group>"; };
+		B1647AC41E051F23003EAAF1 /* MKJChatViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJChatViewcontroller.m; sourceTree = "<group>"; };
+		B1647AC61E05210C003EAAF1 /* DemoModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModelData.h; sourceTree = "<group>"; };
+		B1647AC71E05210C003EAAF1 /* DemoModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModelData.m; sourceTree = "<group>"; };
+		B1647ACB1E052F81003EAAF1 /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
+		B1647ACD1E053086003EAAF1 /* jsq_messages_sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = jsq_messages_sample.m4a; sourceTree = "<group>"; };
+		B1DB91481E03E8770080FF1E /* JSQChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DB914C1E03E8770080FF1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1DB914E1E03E8770080FF1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1DB914F1E03E8770080FF1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1DB91511E03E8770080FF1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B1DB91521E03E8770080FF1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B1DB91551E03E8770080FF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1DB91571E03E8770080FF1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1DB915A1E03E8770080FF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1DB915C1E03E8770080FF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DB91611E03E8770080FF1E /* JSQChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DB91651E03E8770080FF1E /* JSQChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSQChatUITests.m; sourceTree = "<group>"; };
+		B1DB91671E03E8770080FF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DB916C1E03E8770080FF1E /* JSQChatUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQChatUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DB91701E03E8770080FF1E /* JSQChatUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSQChatUIUITests.m; sourceTree = "<group>"; };
+		B1DB91721E03E8770080FF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1DB91451E03E8770080FF1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A76BF7EEAFD2BE78875E21 /* libPods-JSQChatUI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB915E1E03E8770080FF1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB91691E03E8770080FF1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83D9B5C06942FBB75B935682 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5003B460055B2801492595D4 /* Pods-JSQChatUI.debug.xcconfig */,
+				A16B9EC7EC9B67E3BE3A21E4 /* Pods-JSQChatUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0A47B56E00670BA4A89FE2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8191501F791B5C780249B419 /* libPods-JSQChatUI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1647AB91E04F79B003EAAF1 /* SettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB91511E03E8770080FF1E /* ViewController.h */,
+				B1DB91521E03E8770080FF1E /* ViewController.m */,
+				B1DB91541E03E8770080FF1E /* Main.storyboard */,
+				B1647ABA1E04F7BC003EAAF1 /* SettingTableViewCell.h */,
+				B1647ABB1E04F7BC003EAAF1 /* SettingTableViewCell.m */,
+				B1647ABC1E04F7BC003EAAF1 /* SettingTableViewCell.xib */,
+				B1647ABF1E051CB4003EAAF1 /* SettingModel.h */,
+				B1647AC01E051CB4003EAAF1 /* SettingModel.m */,
+			);
+			name = SettingVC;
+			sourceTree = "<group>";
+		};
+		B1647AC21E051ED1003EAAF1 /* ChatUI */ = {
+			isa = PBXGroup;
+			children = (
+				B1647AC31E051F23003EAAF1 /* MKJChatViewcontroller.h */,
+				B1647AC41E051F23003EAAF1 /* MKJChatViewcontroller.m */,
+				B1647AC61E05210C003EAAF1 /* DemoModelData.h */,
+				B1647AC71E05210C003EAAF1 /* DemoModelData.m */,
+			);
+			name = ChatUI;
+			sourceTree = "<group>";
+		};
+		B1DB913F1E03E8770080FF1E = {
+			isa = PBXGroup;
+			children = (
+				B1DB914A1E03E8770080FF1E /* JSQChatUI */,
+				B1DB91641E03E8770080FF1E /* JSQChatUITests */,
+				B1DB916F1E03E8770080FF1E /* JSQChatUIUITests */,
+				B1DB91491E03E8770080FF1E /* Products */,
+				83D9B5C06942FBB75B935682 /* Pods */,
+				B0A47B56E00670BA4A89FE2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1DB91491E03E8770080FF1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB91481E03E8770080FF1E /* JSQChatUI.app */,
+				B1DB91611E03E8770080FF1E /* JSQChatUITests.xctest */,
+				B1DB916C1E03E8770080FF1E /* JSQChatUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1DB914A1E03E8770080FF1E /* JSQChatUI */ = {
+			isa = PBXGroup;
+			children = (
+				B1647AC21E051ED1003EAAF1 /* ChatUI */,
+				B1647AB91E04F79B003EAAF1 /* SettingVC */,
+				B1DB914E1E03E8770080FF1E /* AppDelegate.h */,
+				B1DB914F1E03E8770080FF1E /* AppDelegate.m */,
+				B1DB91571E03E8770080FF1E /* Assets.xcassets */,
+				B1DB91591E03E8770080FF1E /* LaunchScreen.storyboard */,
+				B1DB915C1E03E8770080FF1E /* Info.plist */,
+				B1647ACD1E053086003EAAF1 /* jsq_messages_sample.m4a */,
+				B1647ACB1E052F81003EAAF1 /* intro.mp4 */,
+				B1DB914B1E03E8770080FF1E /* Supporting Files */,
+			);
+			path = JSQChatUI;
+			sourceTree = "<group>";
+		};
+		B1DB914B1E03E8770080FF1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB914C1E03E8770080FF1E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1DB91641E03E8770080FF1E /* JSQChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB91651E03E8770080FF1E /* JSQChatUITests.m */,
+				B1DB91671E03E8770080FF1E /* Info.plist */,
+			);
+			path = JSQChatUITests;
+			sourceTree = "<group>";
+		};
+		B1DB916F1E03E8770080FF1E /* JSQChatUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB91701E03E8770080FF1E /* JSQChatUIUITests.m */,
+				B1DB91721E03E8770080FF1E /* Info.plist */,
+			);
+			path = JSQChatUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1DB91471E03E8770080FF1E /* JSQChatUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1DB91751E03E8770080FF1E /* Build configuration list for PBXNativeTarget "JSQChatUI" */;
+			buildPhases = (
+				D99B017A53D9F0BA3F0070FB /* [CP] Check Pods Manifest.lock */,
+				B1DB91441E03E8770080FF1E /* Sources */,
+				B1DB91451E03E8770080FF1E /* Frameworks */,
+				B1DB91461E03E8770080FF1E /* Resources */,
+				5F17F7C39F60832AEB4B98DB /* [CP] Embed Pods Frameworks */,
+				23B7A6FC7B70B7344E14AC9F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSQChatUI;
+			productName = JSQChatUI;
+			productReference = B1DB91481E03E8770080FF1E /* JSQChatUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1DB91601E03E8770080FF1E /* JSQChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1DB91781E03E8770080FF1E /* Build configuration list for PBXNativeTarget "JSQChatUITests" */;
+			buildPhases = (
+				B1DB915D1E03E8770080FF1E /* Sources */,
+				B1DB915E1E03E8770080FF1E /* Frameworks */,
+				B1DB915F1E03E8770080FF1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1DB91631E03E8770080FF1E /* PBXTargetDependency */,
+			);
+			name = JSQChatUITests;
+			productName = JSQChatUITests;
+			productReference = B1DB91611E03E8770080FF1E /* JSQChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1DB916B1E03E8770080FF1E /* JSQChatUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1DB917B1E03E8770080FF1E /* Build configuration list for PBXNativeTarget "JSQChatUIUITests" */;
+			buildPhases = (
+				B1DB91681E03E8770080FF1E /* Sources */,
+				B1DB91691E03E8770080FF1E /* Frameworks */,
+				B1DB916A1E03E8770080FF1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1DB916E1E03E8770080FF1E /* PBXTargetDependency */,
+			);
+			name = JSQChatUIUITests;
+			productName = JSQChatUIUITests;
+			productReference = B1DB916C1E03E8770080FF1E /* JSQChatUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1DB91401E03E8770080FF1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MKJING;
+				TargetAttributes = {
+					B1DB91471E03E8770080FF1E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					B1DB91601E03E8770080FF1E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1DB91471E03E8770080FF1E;
+					};
+					B1DB916B1E03E8770080FF1E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1DB91471E03E8770080FF1E;
+					};
+				};
+			};
+			buildConfigurationList = B1DB91431E03E8770080FF1E /* Build configuration list for PBXProject "JSQChatUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1DB913F1E03E8770080FF1E;
+			productRefGroup = B1DB91491E03E8770080FF1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1DB91471E03E8770080FF1E /* JSQChatUI */,
+				B1DB91601E03E8770080FF1E /* JSQChatUITests */,
+				B1DB916B1E03E8770080FF1E /* JSQChatUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1DB91461E03E8770080FF1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DB915B1E03E8770080FF1E /* LaunchScreen.storyboard in Resources */,
+				B1DB91581E03E8770080FF1E /* Assets.xcassets in Resources */,
+				B1647ACC1E052F81003EAAF1 /* intro.mp4 in Resources */,
+				B1647ABE1E04F7BC003EAAF1 /* SettingTableViewCell.xib in Resources */,
+				B1DB91561E03E8770080FF1E /* Main.storyboard in Resources */,
+				B1647ACE1E053086003EAAF1 /* jsq_messages_sample.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB915F1E03E8770080FF1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB916A1E03E8770080FF1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23B7A6FC7B70B7344E14AC9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSQChatUI/Pods-JSQChatUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F17F7C39F60832AEB4B98DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSQChatUI/Pods-JSQChatUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99B017A53D9F0BA3F0070FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1DB91441E03E8770080FF1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DB91531E03E8770080FF1E /* ViewController.m in Sources */,
+				B1DB91501E03E8770080FF1E /* AppDelegate.m in Sources */,
+				B1647ABD1E04F7BC003EAAF1 /* SettingTableViewCell.m in Sources */,
+				B1647AC51E051F23003EAAF1 /* MKJChatViewcontroller.m in Sources */,
+				B1647AC81E05210C003EAAF1 /* DemoModelData.m in Sources */,
+				B1DB914D1E03E8770080FF1E /* main.m in Sources */,
+				B1647AC11E051CB4003EAAF1 /* SettingModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB915D1E03E8770080FF1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DB91661E03E8770080FF1E /* JSQChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB91681E03E8770080FF1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DB91711E03E8770080FF1E /* JSQChatUIUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1DB91631E03E8770080FF1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1DB91471E03E8770080FF1E /* JSQChatUI */;
+			targetProxy = B1DB91621E03E8770080FF1E /* PBXContainerItemProxy */;
+		};
+		B1DB916E1E03E8770080FF1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1DB91471E03E8770080FF1E /* JSQChatUI */;
+			targetProxy = B1DB916D1E03E8770080FF1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1DB91541E03E8770080FF1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DB91551E03E8770080FF1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1DB91591E03E8770080FF1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DB915A1E03E8770080FF1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1DB91731E03E8770080FF1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1DB91741E03E8770080FF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1DB91761E03E8770080FF1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5003B460055B2801492595D4 /* Pods-JSQChatUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JSQChatUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikejing.JSQChatUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1DB91771E03E8770080FF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16B9EC7EC9B67E3BE3A21E4 /* Pods-JSQChatUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JSQChatUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikejing.JSQChatUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B1DB91791E03E8770080FF1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JSQChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikejing.JSQChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSQChatUI.app/JSQChatUI";
+			};
+			name = Debug;
+		};
+		B1DB917A1E03E8770080FF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JSQChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikejing.JSQChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSQChatUI.app/JSQChatUI";
+			};
+			name = Release;
+		};
+		B1DB917C1E03E8770080FF1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JSQChatUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikejing.JSQChatUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JSQChatUI;
+			};
+			name = Debug;
+		};
+		B1DB917D1E03E8770080FF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JSQChatUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikejing.JSQChatUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JSQChatUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1DB91431E03E8770080FF1E /* Build configuration list for PBXProject "JSQChatUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DB91731E03E8770080FF1E /* Debug */,
+				B1DB91741E03E8770080FF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1DB91751E03E8770080FF1E /* Build configuration list for PBXNativeTarget "JSQChatUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DB91761E03E8770080FF1E /* Debug */,
+				B1DB91771E03E8770080FF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1DB91781E03E8770080FF1E /* Build configuration list for PBXNativeTarget "JSQChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DB91791E03E8770080FF1E /* Debug */,
+				B1DB917A1E03E8770080FF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1DB917B1E03E8770080FF1E /* Build configuration list for PBXNativeTarget "JSQChatUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DB917C1E03E8770080FF1E /* Debug */,
+				B1DB917D1E03E8770080FF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1DB91401E03E8770080FF1E /* Project object */;
+}

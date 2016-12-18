@@ -1,0 +1,10 @@
+platform:ios,'8.0'
+
+target 'JSQChatUI' do
+
+pod 'JSQMessagesViewController'
+pod 'Masonry'
+pod 'SDWebImage'
+
+
+end
