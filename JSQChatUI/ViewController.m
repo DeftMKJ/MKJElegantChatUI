@@ -31,6 +31,8 @@ static NSString * identifyPushID = @"PushChatCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"SOCKET"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, kScreen_Witdh, kScreen_Height) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;

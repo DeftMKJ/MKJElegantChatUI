@@ -7,8 +7,11 @@
 //
 
 #import "MKJChatViewcontroller.h"
+#import <GCDAsyncSocket.h>
 
-@interface MKJChatViewcontroller ()
+@interface MKJChatViewcontroller () <GCDAsyncSocketDelegate>
+
+@property (nonatomic,strong) GCDAsyncSocket *clientSocket;// 客户端链接的Socket
 
 @end
 
@@ -19,9 +22,94 @@
     NSLog(@"dealloc--->%s",object_getClassName(self));
 }
 
+-(void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
+    // 1.读取数据
+    NSString *dataStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    if ([dataStr isEqualToString:@"\r\n"]) {
+        return;
+    }
+    if ([dataStr containsString:@"\r"] || [dataStr containsString:@"\n"]) {
+        dataStr = [dataStr stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+        dataStr = [dataStr stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    }
+    /**
+     *  Show the typing indicator to be shown
+     */
+    self.showTypingIndicator = YES;
+    
+    /**
+     *  Scroll to actually view the indicator 滚动到最后
+     */
+    [self scrollToBottomAnimated:YES];
+    /**
+     *  Allow typing indicator to show
+     */
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        NSMutableArray *userIds = [[self.demoData.users allKeys] mutableCopy];
+        [userIds removeObject:self.senderId];
+        NSString *randomUserId = userIds[arc4random_uniform((int)[userIds count])];
+        
+        JSQMessage *newMessage = nil;
+        id<JSQMessageMediaData> newMediaData = nil;
+        id newMediaAttachmentCopy = nil;
+        
+        newMessage = [JSQMessage messageWithSenderId:randomUserId
+                                             displayName:self.demoData.users[randomUserId]
+                                                    text:dataStr];
+        
+        
+        /**
+         *  Upon receiving a message, you should:
+         *
+         *  1. Play sound (optional)
+         *  2. Add new id<JSQMessageData> object to your data source
+         *  3. Call `finishReceivingMessage`
+         */
+        
+        // [JSQSystemSoundPlayer jsq_playMessageReceivedSound];
+        
+        // 播放声音
+        [self.demoData.messages addObject:newMessage];
+        [self finishReceivingMessageAnimated:YES];
+        
+    });
+
+    // 2.添加到数据源
+//    [self.dataSource addObject:dataStr];
+    
+    // 3.刷新数据
+//    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//        [self.tableView reloadData];
+//    }];
+    
+    // 4.每次接收完数据，都要再次监听数据
+    [self.clientSocket readDataWithTimeout:-1 tag:0];
+}
+
+#pragma mark socket代理
+-(void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
+    NSLog(@"连接主机成功");
+    // 监听数据
+    [self.clientSocket readDataWithTimeout:-1 tag:0];
+}
+
+-(void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
+    NSLog(@"连接主机失败 %@",err);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // 连接到聊天服务器
+    GCDAsyncSocket *socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
+    
+    [socket connectToHost:@"127.0.0.1" onPort:3667 error:nil];
+    self.clientSocket = socket;
+    
+    
+    
     self.title = @"嗨起来";
     
     // 键盘上面的那个toolbar
@@ -311,6 +399,12 @@
     // 套路三部曲 直接完成组装
     
     // [JSQSystemSoundPlayer jsq_playMessageSentSound];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"SOCKET"]) {
+        [self.clientSocket writeData:[text dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:0];
+        [self.clientSocket readDataWithTimeout:-1 tag:0];
+    }
+    // 发送数据到服务器
+    
     
     JSQMessage *message = [[JSQMessage alloc] initWithSenderId:senderId
                                              senderDisplayName:senderDisplayName

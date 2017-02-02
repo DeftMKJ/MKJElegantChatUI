@@ -5,6 +5,6 @@ target 'JSQChatUI' do
 pod 'JSQMessagesViewController'
 pod 'Masonry'
 pod 'SDWebImage'
-
+pod 'CocoaAsyncSocket'
 
 end
